@@ -9,24 +9,28 @@ const customerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    // email: String, // Removed - You can comment out or delete this line
+    // email: String, // Removed
     address: {
         type: String
     },
-    city: { // Added city field
+    city: {
         type: String
     },
-    billNumber: { // Added billNumber field
+    billNumber: {
         type: String
     },
-    warrantyDateFrom: { // Added warrantyDateFrom field
+    warrantyDateFrom: {
         type: Date
     },
-    warrantyDateTo: { // Added warrantyDateTo field
+    warrantyDateTo: {
         type: Date
     },
-    modelName: { // Added modelName field
+    modelName: {
         type: String
+    },
+    price: { 
+        type: Number,
+        required: true
     },
     createdAt: {
         type: Date,
