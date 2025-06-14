@@ -6,8 +6,8 @@ const customerController = require('../controllers/customerController');
 router.get('/', customerController.getAllCustomers);
 router.get('/count', customerController.getCustomerCount);
 router.post('/', customerController.createCustomer);
-router.get('/:id', customerController.getCustomerById);      // 🔍 Fetch one
-router.put('/:id', customerController.updateCustomer);       // ✏️ Update
-router.delete('/:id', customerController.deleteCustomer);    // ❌ Delete
+router.get('/:id', customerController.getCustomerById);      
+router.put('/:id', customerController.updateCustomer);       
+router.delete('/:id', customerController.deleteCustomer);    
 
 module.exports = router;
