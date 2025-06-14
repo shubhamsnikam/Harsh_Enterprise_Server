@@ -28,9 +28,15 @@ const customerSchema = new mongoose.Schema({
     modelName: {
         type: String
     },
-    price: { 
+    price: {
         type: Number,
         required: true
+    },
+    invoiceDate: {
+        type: Date
+    },
+    installationDate: {
+        type: Date
     },
     createdAt: {
         type: Date,
