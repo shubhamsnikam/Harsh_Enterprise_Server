@@ -15,5 +15,8 @@ router.get('/today/:date', visitController.getVisitsForSpecificDay);
 router.get('/', visitController.getAllVisits);
 router.post('/', visitController.createVisit);
 router.put('/:id', visitController.updateVisit);
+router.delete('/:id', visitController.deleteVisit); // Optional
+
+
 
 module.exports = router;
